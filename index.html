@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Онлайн-калькулятор стоимости авто</h1>
+
+        <form action="">
+
+            <label for="brands">Марка авто</label>
+            <select name="brand" id="brands" required>
+                <option value="0" selected>Не выбрано</option>
+                <option value="20000">Audi</option>
+                <option value="30000">BMW</option>
+                <option value="10000">Lada</option>
+                <option value="20000">Nissan</option>
+                <option value="20000">Renault</option>
+                <option value="30000">Toyota</option>
+            </select>
+
+            <p><label for="models">Модель</label>
+                <select name="model" id="models" required>
+                    <option value="0" selected>Не выбрано</option>
+                    <option value="20000">XR</option>
+                    <option value="30000">ER1</option>
+                    <option value="10000">KJ5</option>
+                    <option value="20000">NTT2</option>
+                </select>
+            </p>
+
+            <p><label for="year">Выберите год выпуска</label>
+                <ul>
+                    <li><input type="radio" name="year" value="10000" checked>1975</li>
+                    <li><input type="radio" name="year" value="10000">1980</li>
+                    <li><input type="radio" name="year" value="10000">1985</li>
+                    <li><input type="radio" name="year" value="20000">1990</li>
+                    <li><input type="radio" name="year" value="20000">1995</li>
+                    <li><input type="radio" name="year" value="20000">2000</li>
+                    <li><input type="radio" name="year" value="30000">2005</li>
+                    <li><input type="radio" name="year" value="30000">2010</li>
+                    <li><input type="radio" name="year" value="30000">2015</li>
+                    <li><input type="radio" name="year" value="40000">2020</li>
+                </ul>
+            </p>
+
+            <p><label for="body">Выберите тип кузова</label>
+                <ul>
+                    <li><input type="radio" name="body" value="20000" checked>Купе</li>
+                    <li><input type="radio" name="body" value="10000">Универсал</li>
+                    <li><input type="radio" name="body" value="10000">Седан</li>
+                    <li><input type="radio" name="body" value="20000">Пикап</li>
+                    <li><input type="radio" name="body" value="20000">Хэтчбек</li>
+                </ul>
+            </p>
+
+            <p><label for="transmission">Выберите тип КПП</label>
+                <ul>
+                    <li><input type="radio" name="transmission" value="10000" checked>Механика</li>
+                    <li><input type="radio" name="transmission" value="40000">Автомат</li>
+                    <li><input type="radio" name="transmission" value="30000">Робот</li>
+                </ul>
+            </p>
+
+            <p><label for="engine">Выберите тип двигателя</label>
+                <ul>
+                    <li><input type="radio" name="engine" value="10000" checked>Бензиновый</li>
+                    <li><input type="radio" name="engine" value="20000">Дизельный</li>
+                    <li><input type="radio" name="engine" value="20000">Электрический</li>
+                </ul>
+            </p>
+
+            <p><label for="drive">Выберите тип привода</label>
+                <ul>
+                    <li><input type="radio" name="drive" value="10000" checked>Задний</li>
+                    <li><input type="radio" name="drive" value="10000">Передний</li>
+                    <li><input type="radio" name="drive" value="30000">Полный</li>
+                </ul>
+            </p>
+
+            <p><label for="power">Укажите мощность двигателя</label>
+                <input type="number" id="power" placeholder="Мощность двигателя в л.с.">
+            </p>
+
+            <p><label for="mileage">Укажите пробег авто</label>
+                <input type="range" min="0" max="200000" value="100000" step="1000" id="mileage">
+                <input type="number" min="0" max="200000" value="100000" id="volume"></input>
+            </p>
+
+            <p><label for="check">Для чего оцениваете свой автомобиль?</label>
+                <ul>
+                    <li><input type="checkbox" id="check">Хочу продать и купить новый</li>
+                    <!-- <li><input type="checkbox" id="check">Хочу продать и купить авто с пробегом</li>
+                    <li><input type="checkbox" id="check">Просто хочу продать</li> -->
+                    <li><input type="checkbox" id="check">Интересно, сколько он стоит</li>
+                </ul>
+            </p>
+
+            <div class="total_sum">
+                <input type="button" value="Рассчитать" id="price"></input>
+                <p id="result"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>

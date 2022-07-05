@@ -1,0 +1,78 @@
+body {
+    background-color: rgba(61, 140, 152, 0.032);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 0 30px 0 0;
+}
+
+.form {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(136, 135, 135, 0.302);
+}
+
+h1 {
+    padding: 30px 0;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(21, 95, 206);
+}
+
+p {
+    padding: 5px 0 ;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#mileage {
+    width: 35vw;
+    /* padding: 10px; */
+}
+
+#power , #volume , #sum{
+    margin-left: 15px;
+    border: 1px solid rgba(21, 95, 206, 0.415);
+}
+
+#power {
+    width: 200px;
+}
+
+
+::placeholder{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.total_sum {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#price {
+    margin: 30px;
+    padding: 15px 35px 17px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(21, 95, 206);
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+#price:hover {
+    transition: 0.05s ease;
+    background-color: rgba(61, 140, 152, 0.298);
+    color: black;
+    cursor: pointer;
+}
